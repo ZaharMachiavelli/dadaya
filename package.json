@@ -1,0 +1,23 @@
+{
+  "name": "objection-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "nodemon src/index.js",
+    "migrate": "knex migrate:latest --knexfile db/knexfile.js",
+    "rollback": "knex migrate:rollback --knexfile db/knexfile.js",
+    "seed": "knex seed:run --knexfile db/knexfile.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "knex": "^3.1.0",
+    "nodemon": "^3.0.2",
+    "sqlite3": "^5.1.7-rc.0"
+  }
+}
